@@ -25,7 +25,7 @@ Before you begin, ensure you have the following installed:
 
 1. **Clone the Project** : Clone the project repository from GitHub using the following command:
 
-    `https://github.com/Saiteja-Dunaboyina/javamockapi.git`
+    `https://github.com/feuji-testing-frameworks/restassured-mockapi-framework.git`
 
 2. **Install dependencies** : If you are using IDE it will automatically install dependecies present in pom.xml or if we use command prompt for download the dependencies using the following command
 
