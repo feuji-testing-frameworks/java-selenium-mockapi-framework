@@ -42,7 +42,7 @@ public class MockApiTest extends Base {
 	
 	@Test(priority = 2)
 	public void testGetAllBookingIds() {
-		test = extentReports.createTest("Getting all booking ids")
+		test = extentReports.createTest("Getting all booking ids using mock api")
 				.assignAuthor("Sai Teja").assignDevice("Windows");
 		Response response = RestAssured.given().when().get("/booking");
 		response.then().log().all();
@@ -51,7 +51,7 @@ public class MockApiTest extends Base {
 	
 	@Test(priority = 3)
 	public void testCreateBooking() {
-		test = extentReports.createTest("Create booking")
+		test = extentReports.createTest("Create booking using mock api")
 				.assignAuthor("Sai Teja").assignDevice("Windows");
 		Response response = RestAssured.given().contentType("application/json")
 				.body(bookingDetails).when().post("/booking");
@@ -66,7 +66,7 @@ public class MockApiTest extends Base {
 	
 	@Test(priority = 4) 
 	public void testGetBookingById() {
-		test = extentReports.createTest("Get Booking details based on booking id")
+		test = extentReports.createTest("Get Booking details based on booking id using mock api")
 				.assignAuthor("Sai Teja").assignDevice("Windows");
 		Response response = RestAssured.given().contentType("application/json")
 				.pathParam("id", id).when().get("/booking/{id}");
@@ -76,7 +76,7 @@ public class MockApiTest extends Base {
 	
 	@Test(priority = 5)
 	public void testUpdateBookingDetails() {
-		test = extentReports.createTest("Update booking details based on booking id")
+		test = extentReports.createTest("Update booking details based on booking id using mock api")
 				.assignAuthor("Sai Teja").assignDevice("Windows");
 		Response  response = RestAssured.given().contentType("application/json")
 				.pathParam("id", id).when().put("/booking/{id}");
@@ -86,7 +86,7 @@ public class MockApiTest extends Base {
 	
 	@Test(priority = 6)
 	public void testDeleteBookingDetails() {
-		test = extentReports.createTest("Delete booking details based on booking id")
+		test = extentReports.createTest("Delete booking details based on booking id using mock api")
 				.assignAuthor("Sai Teja").assignDevice("Windows");
 		Response response = RestAssured.given().contentType("appilcation/json")
 				.pathParam("id", id).delete("booking/{id}");
