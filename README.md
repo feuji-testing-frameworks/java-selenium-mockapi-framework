@@ -14,6 +14,33 @@ Before you begin, ensure you have the following installed:
 
 ## Project Structure
 
+```plaintext
+selenium-java-cucumber-framework
+├── src
+│   ├── test
+│   │   ├── java
+│   │   │   └── com
+│   │   │       └── restassured
+│   │   │           ├── base
+│   │   │           │     └── Base.java
+│   │   │           ├── endpoints
+│   │   │           │       ├── BookingAPIEndPoint.java
+│   │   │           │       └── Routes.java
+|   |   |           ├── mockserver    
+│   │   │           │       └── MockServer.java
+|   |   |           ├── payloads    
+│   │   │           │       ├── BookingDates.java
+|   |   |           |       ├── BookingDetails.java
+│   │   │           │       └── TokenCreation.java
+│   │   │           └── test
+|   |   |               ├── ApiBookingTest.java
+│   │   │               └── MockApiTest.java
+│   │   └── resources
+│   │       └── log4j2.properties
+├── pom.xml
+└── testng.xml
+```
+
 - **Base.java** : Base class for setting up and tearing down tests.
 - **MockServer.java** : MockServer class for setting up and tearing down the mock server.
 - **ApiBookingTest.java** : This class contains the API testcases.
