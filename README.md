@@ -15,7 +15,7 @@ Before you begin, ensure you have the following installed:
 ## Project Structure
 
 ```plaintext
-selenium-java-cucumber-framework
+restassured-mockapi-framework
 ├── src
 │   ├── test
 │   │   ├── java
